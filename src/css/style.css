@@ -10,6 +10,8 @@ html {
     --color-base: #fff;
     --color-base-2: #e3e3e3;
     --color-black:#000000;
+    --color-gradient-uno: #384679;
+    --color-gradient-two: #283153;
 }
 body {
     font-size: 1.6rem;
@@ -49,6 +51,7 @@ header {
 }
 .nav-item {
     margin-right: 5rem;
+    cursor: pointer;
 }
 .nav-item:last-child{
     margin-right: 0;
@@ -56,7 +59,7 @@ header {
 .nav-link {
  font-size: 1.2rem;
  text-transform: uppercase;
- color: var(--color-black);
+ color: var(--color-base);
  font-weight: bold;
  transition: opacity .3s;
 }
@@ -66,4 +69,87 @@ header {
 .logo {
     display: block;
     width: 8rem;
+}
+/*Main Content*/
+.landing-page {
+ width: 100%;
+ min-height: 100vh;
+ background-image: linear-gradient(to bottom right, #384679, #283153);
+position: relative;
+overflow: hidden;
+display: flex;
+align-items: center;
+z-index: 1;
+}
+.landing-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: 100vh;
+    background-image: url(../assets/bg-pat.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .4;
+    z-index: -1;
+}
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.content-details {
+    max-width: 80%;
+}
+.title {
+    font-size: 3rem;
+    color: var(--color-base);
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.paragraph {
+    color: var(--color-base-2);
+    margin-bottom: 2.5rem;
+}
+.search {
+    margin-bottom: 2.5rem;
+}
+.search input {
+    border: none;
+    border-radius: 5rem;
+    padding: 2rem;
+    outline: none;
+}
+.search-bar {
+    width: calc(100% - .5rem);
+}
+.search-btn {
+    width: 10rem;
+    background-image: linear-gradient(to right, #FF83D5, #FFCCB0);
+    color: var(--color-base);
+    cursor: pointer;
+    margin-left: -10rem;
+}
+.search-btn:hover {
+    background-image: linear-gradient(to left, #FF83D5, #FFCCB0);
+}
+/*social-media*/
+.sm-list {
+    display: flex;
+}
+.sm-link {
+    width: 3rem;
+    height: 3rem;
+    color: var(--color-base-2);
+    border: 1px solid #929FC5;
+    border-radius: 50%;
+    display: flex;
+    margin-right: 1.5rem;
+}
+.sm-link i {
+margin: auto;
+}
+.sm-link:hover {
+    background-image: linear-gradient(to right, #FF83D5, #08f3e7);
 }
