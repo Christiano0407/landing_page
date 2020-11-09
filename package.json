@@ -1,0 +1,24 @@
+{
+  "name": "landing",
+  "version": "1.0.0",
+  "description": "project-landin-animation",
+  "main": "../src/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Christiano0407/landing_page.git"
+  },
+  "keywords": [
+    "animation",
+    "website",
+    "landing-page"
+  ],
+  "author": "Chris04",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Christiano0407/landing_page/issues"
+  },
+  "homepage": "https://github.com/Christiano0407/landing_page#readme"
+}
