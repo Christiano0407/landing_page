@@ -31,6 +31,9 @@ img {
     padding: 0 1.5rem;
 }
 
+.hue-shift {
+    animation: hue-shift 5s infinite alternate;
+}
 /*Headers*/
 header {
     position: absolute;
@@ -152,4 +155,42 @@ margin: auto;
 }
 .sm-link:hover {
     background-image: linear-gradient(to right, #FF83D5, #08f3e7);
+  color: var(--color-base);
 }
+.image-group {
+    text-align: center;
+    position: relative;
+}
+.blob-bean {
+    position: absolute;
+    top: 2.5rem;
+    left: -1rem;
+    z-index: 10;
+    animation: move-down 2s infinite alternate;
+}
+.blob{
+    position: absolute;
+    z-index: -1;
+}
+.blob-large {
+    animation: move-up 2s infinite alternate;
+}
+.blob-1 {
+    top: -11rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.blob-2 {
+    top: 15rem;
+    left: -2rem;
+}
+.blob-3 {
+  right: 5rem;
+  bottom: -24rem;
+}
+.blob-4 {
+    left: -21rem;
+    bottom: -17rem;
+}
+/*Animations*/
+

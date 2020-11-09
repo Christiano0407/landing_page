@@ -1,0 +1,27 @@
+/*ANIMATIONS*/
+@keyframes move-up {
+    from {
+    transform: translateY(0);
+    }
+    to {
+    transform: translateY(2rem);
+    }
+}
+
+@keyframes move-down {
+    from {
+    transform: translateY(0);
+    }
+    to {
+    transform: translateY(-2rem);
+    }
+}
+
+@keyframes hue-shift {
+    from{
+    filter: hue-rotate(0);
+    }
+    to {
+    filter: hue-rotate(360deg);
+    }
+}
