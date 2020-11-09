@@ -6,9 +6,15 @@
 html {
     font-size: 62.5%;
 }
+:root {
+    --color-base: #fff;
+    --color-base-2: #e3e3e3;
+    --color-black:#000000;
+}
 body {
     font-size: 1.6rem;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
 }
 a {
     text-decoration: none;
@@ -20,6 +26,7 @@ img {
 .container {
     max-width: 125rem;
     margin: 0 auto;
+    padding: 0 1.5rem;
 }
 
 /*Headers*/
@@ -36,6 +43,27 @@ header {
     align-items: flex-end;
     justify-content: space-between;
 }
-section {
-    display: none;
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+.nav-item {
+    margin-right: 5rem;
+}
+.nav-item:last-child{
+    margin-right: 0;
+}
+.nav-link {
+ font-size: 1.2rem;
+ text-transform: uppercase;
+ color: var(--color-black);
+ font-weight: bold;
+ transition: opacity .3s;
+}
+.nav-link:hover {
+    opacity: .6;
+}
+.logo {
+    display: block;
+    width: 8rem;
 }
